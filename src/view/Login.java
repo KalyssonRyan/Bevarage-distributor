@@ -37,7 +37,6 @@ public class Login extends javax.swing.JFrame {
         bxSenha = new javax.swing.JPasswordField();
         jLabel4 = new javax.swing.JLabel();
         jMenu = new javax.swing.JMenuBar();
-        jMenu1 = new javax.swing.JMenu();
         jMenu2 = new javax.swing.JMenu();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -148,14 +147,6 @@ public class Login extends javax.swing.JFrame {
         jMenu.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
         jMenu.setForeground(new java.awt.Color(255, 255, 255));
 
-        jMenu1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/imagens/iconeSobre.png"))); // NOI18N
-        jMenu1.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jMenu1MouseClicked(evt);
-            }
-        });
-        jMenu.add(jMenu1);
-
         jMenu2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/imagens/iconeSair.png"))); // NOI18N
         jMenu2.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -247,15 +238,6 @@ public class Login extends javax.swing.JFrame {
        }
     }//GEN-LAST:event_jMenu2MouseClicked
 
-    private void jMenu1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jMenu1MouseClicked
-       //Mostra a tela de sobre e minimiza a atual
-        Sobre sob = new Sobre();
-        sob.show();
-        this.dispose();
-        
-        
-    }//GEN-LAST:event_jMenu1MouseClicked
-
     /**
      * @param args the command line arguments
      */
@@ -302,7 +284,6 @@ public class Login extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JMenuBar jMenu;
-    private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu2;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
